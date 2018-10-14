@@ -1,0 +1,14 @@
+
+plugins {
+  id "com.palantir.npm-run" version "0.5.0"
+}
+
+group = 'de.jonashackt'
+version = '0.0.1-SNAPSHOT'
+
+description = """"""
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}

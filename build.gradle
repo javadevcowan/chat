@@ -1,0 +1,19 @@
+
+allprojects  {
+  group = 'de.jonashackt'
+  version = '0.0.1-SNAPSHOT'
+
+  repositories {
+        mavenCentral()
+        maven { url "https://repo.spring.io/snapshot" }
+        maven { url "https://repo.spring.io/milestone" }
+    }
+
+}
+
+//task(':backend:build').dependsOn ':fontend:build'
+
+//project(':backend') {
+//	task build(dependsOn: ':fontend:build') 
+//}
+
