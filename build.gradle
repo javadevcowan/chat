@@ -11,9 +11,7 @@ allprojects  {
 
 }
 
-//task(':backend:build').dependsOn ':fontend:build'
 
-//project(':backend') {
-//	task build(dependsOn: ':fontend:build') 
-//}
+task(':backend:build').dependsOn ':fontend:build'
+
 

@@ -30,13 +30,13 @@ compileTestKotlin {
 }
 
 compileJava.dependsOn ':frontend:build'
-assemble.dependsOn 'copyWeb'
+compileJava.dependsOn 'copyWeb'
 
 task copyWeb(type:Copy) {
-	from project(':frontend').file('target/dist/static/')
-	into "build/resources/main/public/static/"
-	from project(':frontend').file('target/dist/index.html')		
-	into "build/resources/main/public/static/"
+	from project(':frontend').file('build')
+	into "build/resources/main/static/"
+	from project(':frontend').file('build/index.html')		
+	into "build/resources/main/static/"
 }
 
 description = 'backend app'

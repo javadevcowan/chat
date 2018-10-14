@@ -10,7 +10,7 @@
     "test:e2e": "true",
     "test": "true",
     "build": "vue-cli-service build",
-    "clean": "true"
+    "clean": "rm -r build/*"
   },
   "dependencies": {
     "vue": "^2.5.17",
